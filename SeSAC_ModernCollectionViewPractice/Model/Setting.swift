@@ -14,6 +14,12 @@ enum SettingType{
 }
 
 struct Setting: Hashable{
-    let name: String
+    let title: String
     let settingType: SettingType
+}
+
+struct SettingOnOff: Hashable {
+    let image: String
+    let title: String
+    let onOff: Bool?
 }

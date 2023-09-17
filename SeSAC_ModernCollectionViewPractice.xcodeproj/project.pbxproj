@@ -14,6 +14,7 @@
 		DE59D7052AB77ADE00C79348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE59D7032AB77ADE00C79348 /* LaunchScreen.storyboard */; };
 		DE59D70E2AB77B0200C79348 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DE59D70D2AB77B0200C79348 /* SnapKit */; };
 		DE59D7102AB7801600C79348 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59D70F2AB7801600C79348 /* Setting.swift */; };
+		DE59D7172AB787BD00C79348 /* SettingOnOffTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE59D7162AB787BD00C79348 /* SettingOnOffTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		DE59D7042AB77ADE00C79348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE59D7062AB77ADE00C79348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE59D70F2AB7801600C79348 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		DE59D7162AB787BD00C79348 /* SettingOnOffTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingOnOffTableViewController.swift; path = SeSAC_ModernCollectionViewPractice/Setting/SettingOnOffTableViewController.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		DE59D6F72AB77ADC00C79348 /* SeSAC_ModernCollectionViewPractice */ = {
 			isa = PBXGroup;
 			children = (
+				DE59D7132AB786FA00C79348 /* Model */,
 				DE59D7122AB7865500C79348 /* App */,
 				DE59D7112AB7864F00C79348 /* Setting */,
 				DE59D7012AB77ADE00C79348 /* Assets.xcassets */,
@@ -70,8 +73,8 @@
 		DE59D7112AB7864F00C79348 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				DE59D70F2AB7801600C79348 /* Setting.swift */,
-				DE59D6FC2AB77ADC00C79348 /* SettingTableViewController.swift */,
+				DE59D7152AB7879900C79348 /* Case2 */,
+				DE59D7142AB7878E00C79348 /* Case1 */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -83,6 +86,30 @@
 				DE59D6FA2AB77ADC00C79348 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		DE59D7132AB786FA00C79348 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE59D70F2AB7801600C79348 /* Setting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE59D7142AB7878E00C79348 /* Case1 */ = {
+			isa = PBXGroup;
+			children = (
+				DE59D7162AB787BD00C79348 /* SettingOnOffTableViewController.swift */,
+			);
+			path = Case1;
+			sourceTree = "<group>";
+		};
+		DE59D7152AB7879900C79348 /* Case2 */ = {
+			isa = PBXGroup;
+			children = (
+				DE59D6FC2AB77ADC00C79348 /* SettingTableViewController.swift */,
+			);
+			path = Case2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +191,7 @@
 				DE59D6FD2AB77ADC00C79348 /* SettingTableViewController.swift in Sources */,
 				DE59D6F92AB77ADC00C79348 /* AppDelegate.swift in Sources */,
 				DE59D7102AB7801600C79348 /* Setting.swift in Sources */,
+				DE59D7172AB787BD00C79348 /* SettingOnOffTableViewController.swift in Sources */,
 				DE59D6FB2AB77ADC00C79348 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

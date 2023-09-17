@@ -10,18 +10,17 @@ import SnapKit
 
 class SettingTableViewController: UIViewController {
     lazy var collectionView = UICollectionView(frame: .zero, collectionViewLayout: createCollectionViewLayout())
-//    let settingGeneral = ["공지사항", "실험실", "버전정보"]
-//    let settingPersonal = ["개인/보안", "알림", "채팅", "멀티프로필"]
-//    let settingEtc = ["고객센터/도움말"]
     
-    let settingGeneral = [Setting(name: "공지사항", settingType: .general), Setting(name: "실험실", settingType: .personal), Setting(name: "버전정보", settingType: .general)]
-    let settingPersonal = [Setting(name: "개인/보안", settingType: .personal), Setting(name: "알림", settingType: .personal), Setting(name: "채팅", settingType: .personal), Setting(name: "멀티프로필", settingType: .personal)]
-    let settingEtc = [Setting(name: "고객센터/도움말", settingType: .etc)]
+    let settingGeneral = [Setting(title: "공지사항", settingType: .general), Setting(title: "실험실", settingType: .personal), Setting(title: "버전정보", settingType: .general)]
+    let settingPersonal = [Setting(title: "개인/보안", settingType: .personal), Setting(title: "알림", settingType: .personal), Setting(title: "채팅", settingType: .personal), Setting(title: "멀티프로필", settingType: .personal)]
+    let settingEtc = [Setting(title: "고객센터/도움말", settingType: .etc)]
     
     var dataSource: UICollectionViewDiffableDataSource<Int, Setting>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "설정"
         
         view.addSubview(collectionView)
         
@@ -53,7 +52,7 @@ class SettingTableViewController: UIViewController {
         
         let cellRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, Setting> { cell, indexPath, itemIdentifier in
             var content = UIListContentConfiguration.valueCell()
-            content.text = itemIdentifier.name
+            content.text = itemIdentifier.title
             cell.contentConfiguration = content
         }
         
